@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "pokemon.h"
+#include <stdlib.h>
 
 int main(){
 
@@ -25,6 +26,10 @@ int main(){
    printf("\n");
 
    release_pokemon(partner_4);
+
+   free(partner);
+   free(partner_2);
+   free(partner_3);
 
   return 0;
 }
